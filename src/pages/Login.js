@@ -11,6 +11,8 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === "hradmin" && password === "1234") {
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
       navigate("/home");
     } else {
       setError("Invalid username or password. Please try again.");
@@ -26,11 +28,12 @@ const Login = () => {
 
         {error && <p className="error-message">{error}</p>}
 
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleLogin} className="login-form">
           <div className="input-group">
             <label>Username:</label>
             <input
               type="text"
+              id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Enter your username"
@@ -42,6 +45,7 @@ const Login = () => {
             <label>Password:</label>
             <input
               type="password"
+              id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
