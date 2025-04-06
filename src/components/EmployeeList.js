@@ -43,7 +43,6 @@ const EmployeeList = ({ employees }) => {
                             <tr key={emp.id}>
                                 <td>{emp.id}</td>
                                 <td>{emp.name}</td>
-                                <td>{emp.gender}</td>
                                 <td>{emp.position}</td>
                                 <td>{emp.salary}</td>
                                 <td>{emp.contact}</td>
