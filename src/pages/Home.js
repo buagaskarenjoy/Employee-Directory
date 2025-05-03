@@ -31,7 +31,7 @@ const Home = () => {
 
         <section className="dashboard">
           <div className="card">
-            <h3>📋 Employees</h3>
+            <h3>📋 Employee List</h3>
             <p>View all employee records.</p>
             <button onClick={() => navigate("/employees")}>View Employees</button>
           </div>
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
 
           <div className="card">
-            <h3>📊 Reports</h3>
+            <h3>📊 HR Reports</h3>
             <p>Generate HR reports and analytics.</p>
             <button onClick={() => navigate("/reports")}>View Reports</button>
           </div>
