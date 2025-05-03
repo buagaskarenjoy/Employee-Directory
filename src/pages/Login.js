@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "hradmin" && password === "1234") {
+    if (username === "hradmin" && password === "@password") {
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
       navigate("/home");
